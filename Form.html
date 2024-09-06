@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Information Form</title>
+</head>
+<body>
+    <h1>Patient Information Form</h1>
+    <form action="submit_patient_info.php" method="post">
+        <fieldset>
+            <legend>Primary Information</legend>
+
+<p>Enter any desired 9 digit number as your userID and if that number is not taken, it will be alloted to you!
+	     <p>
+	    <label for="userid">User ID:</label>
+            <input type="number" id="userid" name="userid" required><br><br>
+
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required><br><br>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+	    <label for="gender">Gender:</label>
+            <input type="text" id="gender" name="gender" required><br><br>
+
+	    <label for="father_name">Father's Name:</label>
+            <input type="text" id="father's name" name="father's name" required><br><br>
+
+	    <label for="mother_name">Mother's Name:</label>
+            <input type="text" id="mother's name" name="mother's name" required><br><br>
+
+	    <label for="aadhar_num">Aadhar Number:</label>
+            <input type="number" id="aadhar" name="aadhar" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Health Information</legend>
+            <label for="blood_type">Blood Type:</label>
+            <input type="text" id="blood_type" name="blood_type" required><br><br>
+
+            <label for="allergies">Allergies:</label>
+            <textarea id="allergies" name="allergies" rows="4" cols="50"></textarea><br><br>
+
+            <label for="current_medications"> Current Medications:</label>
+            <textarea id="current_medications" name="current_medications" rows="4" cols="50"></textarea><br><br>
+
+            <label for="major_disorders">Major Disorders:</label>
+            <textarea id="major_disorders" name="major_disorders" rows="4" cols="50"></textarea><br><br>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
